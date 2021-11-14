@@ -6,9 +6,7 @@ import Card from "../card/card.component";
 
 const Profile = (props) => {
 	const id = useParams().id;
-	console.log(id);
 	const candidate = props.candidates.filter((item) => item.id === id);
-	console.log(candidate);
 	return (
 		<div className="profile">
 			<div className="card">

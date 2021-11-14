@@ -75,27 +75,33 @@ function App() {
 		history.push("/");
 	};
 
-	return (
-		<div className="App">
-			<Navbar handleChange={handleChange} />
-			<Switch>
-				<Route path="/" exact>
-					<CardList candidates={filteredCandidates} />
-				</Route>
-				<Route path="/shortlisted" exact>
-					<CardList candidates={shortlistedCandidates} />
-				</Route>
-				<Route path="/rejected" exact>
-					<CardList candidates={rejectedCandidates} />
-				</Route>
-				<Route path="/:id">
-					<Profile
-						candidates={candidates}
-						handleAcceptance={handleAcceptance}
-						handleRejection={handleRejection}
-					/>
-				</Route>
-			</Switch>
+	return candidates?.length > 0 ? (
+		<>
+			<div className="App">
+				<Navbar handleChange={handleChange} />
+				<Switch>
+					<Route path="/" exact>
+						<CardList candidates={filteredCandidates} />
+					</Route>
+					<Route path="/shortlisted" exact>
+						<CardList candidates={shortlistedCandidates} />
+					</Route>
+					<Route path="/rejected" exact>
+						<CardList candidates={rejectedCandidates} />
+					</Route>
+					<Route path="/:id">
+						<Profile
+							candidates={candidates}
+							handleAcceptance={handleAcceptance}
+							handleRejection={handleRejection}
+						/>
+					</Route>
+				</Switch>
+			</div>
+		</>
+	) : (
+		<div>
+			<h1>Loading</h1>
 		</div>
 	);
 }
