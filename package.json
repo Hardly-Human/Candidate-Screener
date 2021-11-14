@@ -2,7 +2,7 @@
 	"name": "candidate-screener",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://www.rehan.tech/Candidate-Screener/",
+	"homepage": "https://Hardly-Human.github.io/Candidate-Screener/",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.15.0",
 		"@testing-library/react": "^11.2.7",
