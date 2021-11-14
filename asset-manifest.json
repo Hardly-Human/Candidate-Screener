@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Candidate-Screener/static/css/main.9256fcff.chunk.css",
+    "main.js": "/Candidate-Screener/static/js/main.a00f35ad.chunk.js",
+    "main.js.map": "/Candidate-Screener/static/js/main.a00f35ad.chunk.js.map",
+    "runtime-main.js": "/Candidate-Screener/static/js/runtime-main.950532b1.js",
+    "runtime-main.js.map": "/Candidate-Screener/static/js/runtime-main.950532b1.js.map",
+    "static/js/2.4e0c4b21.chunk.js": "/Candidate-Screener/static/js/2.4e0c4b21.chunk.js",
+    "static/js/2.4e0c4b21.chunk.js.map": "/Candidate-Screener/static/js/2.4e0c4b21.chunk.js.map",
+    "static/js/3.3599281e.chunk.js": "/Candidate-Screener/static/js/3.3599281e.chunk.js",
+    "static/js/3.3599281e.chunk.js.map": "/Candidate-Screener/static/js/3.3599281e.chunk.js.map",
+    "index.html": "/Candidate-Screener/index.html",
+    "static/css/main.9256fcff.chunk.css.map": "/Candidate-Screener/static/css/main.9256fcff.chunk.css.map",
+    "static/js/2.4e0c4b21.chunk.js.LICENSE.txt": "/Candidate-Screener/static/js/2.4e0c4b21.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.950532b1.js",
+    "static/js/2.4e0c4b21.chunk.js",
+    "static/css/main.9256fcff.chunk.css",
+    "static/js/main.a00f35ad.chunk.js"
+  ]
+}
