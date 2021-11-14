@@ -21,3 +21,8 @@
 	width: 180px;
 	height: 180px;
 }
+
+.card-container h2 {
+	text-decoration: none;
+	color: black;
+}

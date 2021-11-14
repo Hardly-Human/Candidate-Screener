@@ -5,7 +5,7 @@ const SearchField = (props) => {
 	return (
 		<input
 			className="search"
-			placeholder="Search Monsters"
+			placeholder="Search Candidates"
 			type="search"
 			onChange={props.handleChange}
 		/>

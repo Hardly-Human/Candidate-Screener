@@ -8,7 +8,10 @@ const Navbar = (props) => {
 	return (
 		<>
 			<nav>
-				<h2>Candidate Screener</h2>
+				<Link to="/">
+					<h2 className="title">Candidate Screener</h2>
+				</Link>
+
 				<ul>
 					<li>
 						<Link to="/shortlisted">Short Listed</Link>
