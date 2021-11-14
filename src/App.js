@@ -61,7 +61,7 @@ function App() {
 			return candidate;
 		});
 		setCandidates(updated);
-		history.push("/CandidateScreener");
+		history.push("/");
 	};
 	const handleRejection = (id) => {
 		const updated = candidates.map((candidate) => {
@@ -72,23 +72,23 @@ function App() {
 			return candidate;
 		});
 		setCandidates(updated);
-		history.push("/CandidateScreener");
+		history.push("/");
 	};
 
 	return (
 		<div className="App">
 			<Navbar handleChange={handleChange} />
 			<Switch>
-				<Route path="/CandidateScreener" exact>
+				<Route path="/" exact>
 					<CardList candidates={filteredCandidates} />
 				</Route>
-				<Route path="/CandidateScreener/shortlisted" exact>
+				<Route path="/shortlisted" exact>
 					<CardList candidates={shortlistedCandidates} />
 				</Route>
-				<Route path="/CandidateScreener/rejected" exact>
+				<Route path="/rejected" exact>
 					<CardList candidates={rejectedCandidates} />
 				</Route>
-				<Route path="/CandidateScreener/:id">
+				<Route path="/:id">
 					<Profile
 						candidates={candidates}
 						handleAcceptance={handleAcceptance}
