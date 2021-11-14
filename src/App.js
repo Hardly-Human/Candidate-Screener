@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
+import { Route, Switch } from "react-router-dom";
+
 import CardList from "./components/card-list/card-list.component";
-import SearchField from "./components/search-field/search-field.component";
+import Navbar from "./components/navbar/navbar.component";
 
 function App() {
 	// #############################################################################
@@ -31,9 +33,18 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Candidate Screener</h1>
-			<SearchField handleChange={handleChange} />
-			<CardList candidates={filteredCandidates} />
+			<Navbar handleChange={handleChange} />
+			<Switch>
+				<Route path="/" exact>
+					<CardList candidates={filteredCandidates} />
+				</Route>
+				<Route path="/shortlisted">
+					<h1>I'm Page 2</h1>
+				</Route>
+				<Route path="/rejected">
+					<h1>I'm Page 1</h1>
+				</Route>
+			</Switch>
 		</div>
 	);
 }

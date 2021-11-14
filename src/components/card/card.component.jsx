@@ -4,7 +4,7 @@ import "./card.style.css";
 const Card = ({ candidate }) => {
 	return (
 		<div className="card-container">
-			<img src={candidate.Image} alt={`${candidate.name}'s Image`} />
+			<img src={candidate.Image} alt="" />
 			<h2>{candidate.name}</h2>
 		</div>
 	);
