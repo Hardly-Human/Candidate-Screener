@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-
 import "./App.css";
+
+import CardList from "./components/card-list/card-list.component";
 
 function App() {
 	const [candidates, setCandidates] = useState([]);
@@ -15,15 +16,7 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Candidate Screener</h1>
-			<div className="candidates-list">
-				{candidates.map((candidate) => (
-					<div className="card-container" key={candidate.id}>
-						<img src={candidate.Image} alt="" />
-						<h2>{candidate.name}</h2>
-						<p>{candidate.id}</p>
-					</div>
-				))}
-			</div>
+			<CardList candidates={candidates} />
 		</div>
 	);
 }
