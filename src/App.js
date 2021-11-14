@@ -54,7 +54,7 @@ function App() {
 
 	const handleAcceptance = (id) => {
 		const updated = candidates.map((candidate) => {
-			if (candidate.id == id) {
+			if (candidate.id === id) {
 				candidate.shortlisted = true;
 				candidate.rejected = false;
 			}
@@ -65,7 +65,7 @@ function App() {
 	};
 	const handleRejection = (id) => {
 		const updated = candidates.map((candidate) => {
-			if (candidate.id == id) {
+			if (candidate.id === id) {
 				candidate.shortlisted = false;
 				candidate.rejected = true;
 			}
