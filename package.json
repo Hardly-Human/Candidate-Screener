@@ -1,8 +1,8 @@
 {
-	"name": "candidate-screener",
+	"name": "candidatescreener",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://Hardly-Human.github.io/Candidate-Screener",
+	"homepage": "http://Hardly-Human.github.io/CandidateScreener",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.15.0",
 		"@testing-library/react": "^11.2.7",

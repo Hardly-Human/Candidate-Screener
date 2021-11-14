@@ -9,7 +9,7 @@ const CardList = (props) => {
 		<div className="card-list">
 			{props.candidates.map((candidate) => (
 				<div key={candidate.id}>
-					<Link to={`/${candidate.id}`}>
+					<Link to={`/CandidateScreener/${candidate.id}`}>
 						<Card
 							candidate={candidate}
 							key={Number(candidate.id)}
